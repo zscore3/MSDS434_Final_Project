@@ -8,8 +8,8 @@ import(
 
 func main(){
   http.HandleFunc("/", index)
-  fmt.Println("Now Serving localhost:8000")
-  http.ListenAndServe(":8000",nil)
+  fmt.Println("Now Serving localhost:8080")
+  http.ListenAndServe(":8080",nil)
 }
 
 func index(w http.ResponseWriter, r *http.Request){
